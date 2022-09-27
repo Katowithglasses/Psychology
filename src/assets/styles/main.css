@@ -280,7 +280,7 @@ body {
   .services__title {
     display: flex;
     text-align: center;
-    padding: 0 2% 1rem 2%;
+    padding: 0 2% 0 2% 1rem 2%;
     font-size: 34px;
   }
 }
@@ -533,6 +533,9 @@ hr {
   #booking {
     display: none;
   }
+  #booking {
+    display: none;
+  }
 }
 .articles__title {
   margin-bottom: 2.5rem;
@@ -607,6 +610,7 @@ hr {
 
 .articles-card__icon:hover {
   transform: scale(1.07);
+  transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -821,19 +825,28 @@ hr {
     display: none;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+}
 .header__logo {
   margin: 0;
+  margin: 0;
   margin-left: 4rem;
+  padding: 0;
   padding: 0;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header__logo {
-    margin-left: 0;
+    margin-left-left: 0;
     order: 2;
   }
 }
 .header__image {
+  margin: 0;
+  padding: 0;
   margin: 0;
   padding: 0;
   width: 77px;
@@ -851,6 +864,12 @@ hr {
   background-color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding-right: 4rem;
+    position: fixed;
+  }
+}
 @media (max-width: 768px) {
   .header {
     padding-right: 4rem;
@@ -896,6 +915,14 @@ span {
   color: rgb(118, 118, 118);
 }
 
+li {
+  color: rgb(0, 0, 0);
+}
+
+span {
+  color: rgb(118, 118, 118);
+}
+
 .booking__title {
   display: flex;
   justify-content: center;
@@ -909,6 +936,7 @@ span {
     font-size: 34px;
   }
 }
+
 
 .booking-block2 {
   display: grid;
