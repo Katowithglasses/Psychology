@@ -11,7 +11,7 @@
     "listt img"
     "btn img";
     justify-items: start;
-    margin-left: 135px;
+    margin-left: 120px;
     margin-bottom: 20px;
 }
 
@@ -28,3 +28,33 @@
     grid-area:img;
 }
 
+ul{
+    padding-inline-start: 2px;  
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .booking-block2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img img img"
+    "listt listt listt"
+    "btn btn btn";
+    justify-items: center;
+    margin-left: 1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .booking-block2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "listt img"
+        "btn img";
+        justify-items: start;
+        margin-left: 25px;
+    }
+}
